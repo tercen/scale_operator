@@ -9,13 +9,13 @@
     "kind": "BooleanProperty",
     "name": "scale",
     "defaultValue": true,
-    "description": "If scale is TRUE then scaling is done by dividing the (centered) columns of x by their standard deviations if center is TRUE, and the root mean square otherwise. If scale is FALSE, no scaling is done."
+    "description": "If scale is TRUE then scaling is done by dividing the (centered) row of x by their standard deviations if center is TRUE, and the root mean square otherwise. If scale is FALSE, no scaling is done."
   },
   {
     "kind": "BooleanProperty",
     "name": "center",
     "defaultValue": true,
-    "description": "If center is TRUE then centering is done by subtracting the column means (omitting NAs) of x from their corresponding columns, and if center is FALSE, no centering is done."
+    "description": "If center is TRUE then centering is done by subtracting the row means (omitting NAs) of x from their corresponding columns, and if center is FALSE, no centering is done."
   }
 ]
 }

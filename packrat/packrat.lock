@@ -34,6 +34,17 @@ Version: 0.2
 Hash: e011aef1e6b2f8ff15d833f56abcf0ba
 Requires: Rcpp, bindr, plogr
 
+Package: cli
+Source: CRAN
+Version: 1.0.0
+Hash: f4239f89feb7ddc65821e4514e9734ae
+Requires: assertthat, crayon
+
+Package: crayon
+Source: CRAN
+Version: 1.3.4
+Hash: ff2840dd9b0d563fc80377a5a45510cd
+
 Package: curl
 Source: CRAN
 Version: 3.0
@@ -86,6 +97,12 @@ GithubUsername: rstudio
 GithubRef: master
 GithubSha1: 4b3e4025404f98d25fb73799e86c1762effe5d7e
 
+Package: pillar
+Source: CRAN
+Version: 1.1.0
+Hash: 576bf712d620ca2b6ca76ca7b6cb5547
+Requires: cli, crayon, rlang, utf8
+
 Package: pkgconfig
 Source: CRAN
 Version: 2.0.1
@@ -96,22 +113,10 @@ Source: CRAN
 Version: 0.1-1
 Hash: fb19215402e2d9f1c7f803dcaa806fc2
 
-Package: plyr
-Source: CRAN
-Version: 1.8.4
-Hash: 9598fbff0cce13bee89ae3a50230d93f
-Requires: Rcpp
-
-Package: reshape2
-Source: CRAN
-Version: 1.4.2
-Hash: cca35d2c477d99d8bc53908939eb659e
-Requires: Rcpp, plyr, stringr
-
 Package: rlang
 Source: CRAN
-Version: 0.1.4
-Hash: fef2abdadbb8db061b9d37e7ca5cb0b4
+Version: 0.1.6
+Hash: 8eb4b2dce38b8f663cb9364b28eaa76b
 
 Package: rtson
 Source: github
@@ -124,34 +129,28 @@ GithubRef: 1.4-rtson
 GithubSha1: efea4bdc41d67e979199ba80376d41ec7fe7208f
 GithubSubdir: rtson
 
-Package: stringi
-Source: CRAN
-Version: 1.1.5
-Hash: b6308e49357a0b475f433599e0d8b5eb
-
-Package: stringr
-Source: CRAN
-Version: 1.2.0
-Hash: 25a86d7f410513ebb7c0bc6a5e16bdc3
-Requires: magrittr, stringi
-
 Package: tercen
 Source: github
-Version: 0.4.7
-Hash: 78269592d2e2596b8feeac04c7ecea07
+Version: 0.4.13
+Hash: 88b569337037acf90d4cb58202c94ea1
 Requires: R6, dplyr, httr, jsonlite, rtson, tibble, yaml
 GithubRepo: teRcen
 GithubUsername: tercen
-GithubRef: 0.4.7
-GithubSha1: d53020e7a3330987337fdb774ebac200861aefa2
+GithubRef: 0.4.13
+GithubSha1: 92d9ba1a8422b973decad9c18253fe1037f1ad20
 
 Package: tibble
 Source: CRAN
-Version: 1.3.4
-Hash: 3b72bdedb6c27fb216574ab9b15f2d43
-Requires: Rcpp, rlang
+Version: 1.4.1
+Hash: 2e61874117a0824203d426b51e8b365d
+Requires: crayon, pillar, rlang
+
+Package: utf8
+Source: CRAN
+Version: 1.1.3
+Hash: a2fe6a996668ee5850b7719f365e831b
 
 Package: yaml
 Source: CRAN
-Version: 2.1.14
-Hash: c81230c3a7d9ba20607ad6b4331173d1
+Version: 2.1.16
+Hash: 784ea5d8302d4a81f166a32a33c10711
