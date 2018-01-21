@@ -12,14 +12,16 @@ do.scale = function(df, ...){
   }  
   
   result = as_tibble(scale.m) %>% 
-    rename_all(.funs=function(x) 'scale') %>% 
-    mutate(.ri = df$.ri, .ci = df$.ci)
+  rename_all(.funs=function(x) 'scale') %>% 
+  mutate(.ri = df$.ri, .ci = df$.ci)
   
   return (result)
 }
  
 (ctx = tercenCtx()) %>% 
   select(.ci, .ri, .y) %>% 
+  group_by(.ci, .ri) %>% 
+  summarise(.y = mean(.y)) %>%
   group_by(.ri) %>%
   do(do.scale(., scale=as.logical(ctx$op.value('scale')), 
               center=as.logical(ctx$op.value('center')))) %>%
