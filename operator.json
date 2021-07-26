@@ -1,6 +1,6 @@
 {
   "name": "Scale",
-  "description": "Scale and center the given data",
+  "description": "Subtracts the Mean and divides by the Standard Deviation of a data set. Also called autoscaling or z-transformation.",
   "tags": ["simple statistics"],
   "authors": ["tercen"],
   "urls": ["https://github.com/tercen/scale_operator"],
