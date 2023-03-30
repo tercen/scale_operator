@@ -2,12 +2,11 @@
   "kind": "OperatorUnitTest",
   "name": "test1",
   "namespace": "test",
-  "inputDataUri": "crabs-long.csv",
-  "outputDataUri": ["result.csv"],
-  "columns": ["observation"],
-  "rows": ["variable"],
+  "inputDataUri": "c03_simple.csv",
+  "columns": ["Observation"],
+  "rows": ["Variable"],
   "colors": [],
   "labels": [],
-  "yAxis": "measurement",
+  "yAxis": "Measurement",
   "xAxis": ""
 }
