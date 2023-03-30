@@ -57,6 +57,13 @@
       "Repository": "CRAN",
       "Hash": "e4f97056611e8e6b8b852d13b7400cf1"
     },
+    "data.table": {
+      "Package": "data.table",
+      "Version": "1.14.8",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "b4c06e554f33344e044ccd7fdca750a9"
+    },
     "dplyr": {
       "Package": "dplyr",
       "Version": "1.1.1",
