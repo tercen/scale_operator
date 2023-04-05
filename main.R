@@ -31,6 +31,6 @@ outDf <- dt[ , c("scaled_value", ".ci") :=
   as.data.frame() %>%
   arrange(.ri, .ci) %>%
   relocate(.ri) %>%
-  relocate(value) %>%
+  relocate(scaled_value) %>%
   ctx$addNamespace() %>%
   ctx$save()
