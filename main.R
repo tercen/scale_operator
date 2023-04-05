@@ -22,7 +22,7 @@ ctx = tercenCtx()
 df <- ctx$select(c(".ci", ".ri", ".y"))
 dt <- data.table(df)
 dt[ , .(.y = mean(.y)), by = c(".ci",".ri")]
-outDf <- dt[ , c("value", ".ci") := 
+outDf <- dt[ , c("scaled_value", ".ci") := 
                do.scale(.y, .ci, 
                         ctx$op.value("scale", as.logical, TRUE),
                         ctx$op.value("center", as.logical, TRUE)),
