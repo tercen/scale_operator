@@ -1,23 +1,28 @@
 {
   "name": "Scale",
   "description": "Subtracts the Mean and divides by the Standard Deviation of a data set. Also called autoscaling or z-transformation.",
-  "tags": ["simple statistics"],
-  "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/scale_operator"],
+  "tags": [
+    "preprocessing",
+    "transformation"
+  ],
+  "authors": [
+    "tercen"
+  ],
+  "urls": [
+    "https://github.com/tercen/scale_operator"
+  ],
   "properties": [
-  {
-    "kind": "BooleanProperty",
-    "name": "scale",
-    "defaultValue": true,
-    "description": "If scale is TRUE then scaling is done by dividing the (centered) row of x by their standard deviations if center is TRUE, and the root mean square otherwise. If scale is FALSE, no scaling is done."
-  },
-  {
-    "kind": "BooleanProperty",
-    "name": "center",
-    "defaultValue": true,
-    "description": "If center is TRUE then centering is done by subtracting the row means (omitting NAs) of x from their corresponding columns, and if center is FALSE, no centering is done."
-  }
-]
+    {
+      "kind": "BooleanProperty",
+      "name": "scale",
+      "defaultValue": true,
+      "description": "If scale is TRUE then scaling is done by dividing the (centered) row of x by their standard deviations if center is TRUE, and the root mean square otherwise. If scale is FALSE, no scaling is done."
+    },
+    {
+      "kind": "BooleanProperty",
+      "name": "center",
+      "defaultValue": true,
+      "description": "If center is TRUE then centering is done by subtracting the row means (omitting NAs) of x from their corresponding columns, and if center is FALSE, no centering is done."
+    }
+  ]
 }
-
-
