@@ -1,6 +1,6 @@
 {
-  "name": "Scale",
-  "description": "Subtracts the Mean and divides by the Standard Deviation of a data set. Also called autoscaling or z-transformation.",
+  "name": "Scale (Z-Score)",
+  "description": "Scales the data by subtracting the mean and dividing by the Standard Deviation.",
   "tags": [
     "preprocessing",
     "transformation"
