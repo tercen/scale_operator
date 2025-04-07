@@ -19,16 +19,17 @@ do.scale = function(y, ci, ...){
 ctx = tercenCtx()
 df <- ctx$select(c(".ri", ".ci", ".y"))
 dt <- data.table(df)
+
 dt[ , .(.y = mean(.y)), by = c(".ri",".ci")]
 
-outDf <- dt[ , c("scaled_value", ".ci") := 
-               do.scale(.y, .ci, 
+outDf <- dt[ , c("scaled_value", ".ri") := 
+               do.scale(.y, .ri, 
                         ctx$op.value("scale", as.logical, TRUE),
                         ctx$op.value("center", as.logical, TRUE)),
              by = c(".ci") ] %>% 
   select(-.y) %>%
   as.data.frame() %>%
-  arrange(.ri, .ci) %>%
+  arrange(.ci, .ri) %>%
   relocate(.ci) %>%
   relocate(scaled_value) %>%
   ctx$addNamespace() %>%
