@@ -1,0 +1,42 @@
+{
+ "kind": "FileDocument",
+ "id": "test/Table_1.csv",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "Table_1.csv",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "4",
+ "dataUri": "lfs/85/0b/87028fd4213d035bd9369a1405f594fbbbad7e250f46f15678c4c2b1d18e",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "",
+  "cacheControl": "",
+  "contentEncoding": "",
+  "contentLanguage": "",
+  "md5Hash": ""
+ },
+ "size": 24538
+}

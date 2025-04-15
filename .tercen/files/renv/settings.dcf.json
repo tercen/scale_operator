@@ -1,0 +1,42 @@
+{
+ "kind": "FileDocument",
+ "id": "renv/settings.dcf",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "settings.dcf",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "3",
+ "dataUri": "lfs/91/ba/c4a922d5ae32d95066dd8e9845914cb7a493fd9e9833d6a569fb12fb0ea8",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "",
+  "cacheControl": "",
+  "contentEncoding": "",
+  "contentLanguage": "",
+  "md5Hash": ""
+ },
+ "size": 102
+}

@@ -1,0 +1,284 @@
+{
+ "kind": "ComputedTableSchema",
+ "id": "53c9407a798b8155f72c0053712e01958ded676b6652f1a91509502782f627ea",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "c1985c60-19dd-11f0-9796-a957102c1d69",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "53c9407a798b8155f72c0053712e01958ded676b6652f1a91509502782f627ea"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "nRows": 188000,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "0707d820-8dc1-42d3-803f-fed3c32248cd",
+   "name": "ds1.scaled_value",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "0d88935a-c409-4313-a7e1-d94b4e62bea4",
+   "name": ".ci",
+   "type": "int32",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "c98a208a-9910-4c75-aeb8-84b0593937b5",
+   "name": ".ri",
+   "type": "int32",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/53/c9/53c9407a798b8155f72c0053712e01958ded676b6652f1a91509502782f627ea",
+ "relation": {
+  "kind": "Relation",
+  "id": "3a22acc6-1aea-42ee-aaac-b80474c6c8c3"
+ },
+ "size": 1644112,
+ "query": {
+  "kind": "CubeQuery",
+  "relation": {
+   "kind": "CompositeRelation",
+   "id": "9781cac9-4f69-4f53-b879-eaa72c5ca6da",
+   "joinOperators": [
+    {
+     "kind": "JoinOperator",
+     "joinType": "leftOuter",
+     "leftPair": {
+      "kind": "ColumnPair",
+      "lColumns": [
+       "channel_id"
+      ],
+      "rColumns": [
+       "channel_id"
+      ]
+     },
+     "rightRelation": {
+      "kind": "SimpleRelation",
+      "id": "f3c9a9c2364111148fccd5b67cb2f034609d378b18ad27773edb64efe7d78e08",
+      "index": 1
+     }
+    }
+   ],
+   "mainRelation": {
+    "kind": "SimpleRelation",
+    "id": "bea501e3d3e4493cdc72fcd51c21df21f87bdc32cec65a52d54c60f810dab999",
+    "index": 0
+   }
+  },
+  "colColumns": [
+   {
+    "kind": "Factor",
+    "name": "channel_name",
+    "type": "string"
+   },
+   {
+    "kind": "Factor",
+    "name": "channel_description",
+    "type": "string"
+   }
+  ],
+  "rowColumns": [
+   {
+    "kind": "Factor",
+    "name": "event_id",
+    "type": "double"
+   }
+  ],
+  "axisQueries": [
+   {
+    "kind": "CubeAxisQuery",
+    "pointSize": 4,
+    "chartType": "point",
+    "yAxis": {
+     "kind": "Factor",
+     "name": "value",
+     "type": "double"
+    },
+    "yAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "xAxis": {
+     "kind": "Factor",
+     "name": "",
+     "type": "string"
+    },
+    "xAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "errors": [],
+    "labels": [],
+    "colors": [],
+    "preprocessors": []
+   }
+  ],
+  "filters": {
+   "kind": "Filters",
+   "removeNaN": true,
+   "namedFilters": []
+  },
+  "operatorSettings": {
+   "kind": "OperatorSettings",
+   "namespace": "ds1",
+   "operatorRef": {
+    "kind": "OperatorRef",
+    "name": "Scale (Z-Score)",
+    "version": "58e970f7009834184693775f67167be0cd6e39bc",
+    "operatorId": "1",
+    "operatorKind": "ROperator",
+    "propertyValues": [
+     {
+      "kind": "PropertyValue",
+      "name": "scale",
+      "value": "true"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "center",
+      "value": "true"
+     }
+    ],
+    "url": {
+     "kind": "Url",
+     "uri": "https://github.com/tercen/scale_operator"
+    },
+    "operatorSpec": {
+     "kind": "OperatorSpec",
+     "ontologyUri": "https://tercen.com/_ontology/tercen",
+     "ontologyVersion": "0.0.1",
+     "inputSpecs": [
+      {
+       "kind": "CrosstabSpec",
+       "metaFactors": [
+        {
+         "kind": "MetaFactor",
+         "name": "Channel",
+         "type": "",
+         "description": "The channel identifiers",
+         "ontologyMapping": "variable",
+         "crosstabMapping": "column",
+         "cardinality": "1..n",
+         "factors": [
+          {
+           "kind": "Factor",
+           "name": "channel_name",
+           "type": "string"
+          },
+          {
+           "kind": "Factor",
+           "name": "channel_description",
+           "type": "string"
+          }
+         ]
+        },
+        {
+         "kind": "MetaFactor",
+         "name": "events",
+         "type": "",
+         "description": "the observations",
+         "ontologyMapping": "observation",
+         "crosstabMapping": "row",
+         "cardinality": "1..n",
+         "factors": [
+          {
+           "kind": "Factor",
+           "name": "event_id",
+           "type": "double"
+          }
+         ]
+        }
+       ],
+       "axis": [
+        {
+         "kind": "AxisSpec",
+         "metaFactors": [
+          {
+           "kind": "MetaFactor",
+           "name": "data",
+           "type": "numeric",
+           "description": "the measurements",
+           "ontologyMapping": "measurement",
+           "crosstabMapping": "y",
+           "cardinality": "1",
+           "factors": [
+            {
+             "kind": "Factor",
+             "name": "value",
+             "type": "double"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "outputSpecs": []
+    }
+   },
+   "environment": [],
+   "operatorModel": {
+    "kind": "OperatorModel"
+   }
+  },
+  "qtHash": "",
+  "columnHash": "",
+  "rowHash": ""
+ }
+}

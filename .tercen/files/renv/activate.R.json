@@ -1,0 +1,42 @@
+{
+ "kind": "FileDocument",
+ "id": "renv/activate.R",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "activate.R",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "3",
+ "dataUri": "lfs/1f/22/70fb796f3e0e9e19c8685dc173f50597d331da2c347c76bd2138e2ab983b",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "",
+  "cacheControl": "",
+  "contentEncoding": "",
+  "contentLanguage": "",
+  "md5Hash": ""
+ },
+ "size": 6401
+}
