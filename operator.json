@@ -24,5 +24,55 @@
       "defaultValue": true,
       "description": "If center is TRUE then centering is done by subtracting the row means (omitting NAs) of x from their corresponding columns, and if center is FALSE, no centering is done."
     }
-  ]
+  ],
+  "operatorSpec": {
+    "kind": "OperatorSpec",
+    "ontologyUri": "https://tercen.com/_ontology/tercen",
+    "ontologyVersion": "0.0.1",
+    "inputSpecs": [
+      {
+        "kind": "CrosstabSpec",
+        "metaFactors": [
+          {
+            "kind": "MetaFactor",
+            "name": "Variable",
+            "type": "",
+            "description": "Variable identifiers (e.g. channels, markers, genes).",
+            "ontologyMapping": "variable",
+            "crosstabMapping": "row",
+            "cardinality": "1..n",
+            "factors": []
+          },
+          {
+            "kind": "MetaFactor",
+            "name": "Observation",
+            "type": "",
+            "description": "Observation identifiers (e.g. cells, samples, individuals).",
+            "ontologyMapping": "observation",
+            "crosstabMapping": "column",
+            "cardinality": "1..n",
+            "factors": []
+          }
+        ],
+        "axis": [
+          {
+            "kind": "AxisSpec",
+            "metaFactors": [
+              {
+                "kind": "MetaFactor",
+                "name": "Measurement",
+                "type": "numeric",
+                "description": "Measurement values to be scaled.",
+                "ontologyMapping": "measurement",
+                "crosstabMapping": "y",
+                "cardinality": "1",
+                "factors": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "outputSpecs": []
+  }
 }
