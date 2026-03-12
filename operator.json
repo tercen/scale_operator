@@ -61,7 +61,7 @@
               {
                 "kind": "MetaFactor",
                 "name": "Measurement",
-                "type": "numeric",
+                "type": "double",
                 "description": "Measurement values to be scaled.",
                 "ontologyMapping": "measurement",
                 "crosstabMapping": "y",
